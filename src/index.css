@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header{
+  background-color: black;
+  color:white;
+  padding:20px 30px;
+  display:flex;
+  justify-content: space-between;
+  font-size:30px;
+  font-family:Arial, Helvetica, sans-serif;
+  letter-spacing:2px ;
+}
+.cart-icon .counter{
+  height:18px;
+  width:18px;
+  background-color: blue;
+  border-radius: 50%;
+  display:flex;
+  position:relative;
+  right:7px;
+  top:-6px;
+  font-size:15px;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon{
+  display: flex;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+img{
+  height: 150px;
+}
+.cart-wrapper{
+  display: inline-flex;
+  margin: 40px;
+  box-shadow: 0px 0px 7px black;
+  width: 320px;
+  border-radius: 5px;
+  
+}
+.image-wrapper{
+  width:180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-right: 1px solid rgb(116, 98, 98);
+}
+.content{
+  display:flex;
+  flex-direction:column;
+  flex-grow:1;
+  padding:10px;
+  gap:10px;
+}
+.price{
+  margin-bottom:auto;
+}
+.content button{
+  background-color: black;
+  color:white;
+  border-radius: 3px;
+}.quantity{
+  display: flex;
+  align-self:flex-end;
+  border-radius: 3px;
+  border:1px solid grey;
+
+}
+.quantity div{
+  height:25px;
+  width:25px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.quantity >div:first-child, .quantity >div:last-child{
+  background-color: rgb(89, 0, 255) !important;
+  color:white;
+  border-radius: 0;
+}
+.quantity >button:disabled{
+  opacity: 0.7;
+}
+main{
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap:50px;
+}
+.total{
+  background-color: grey;
+  padding: 17px 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+}
